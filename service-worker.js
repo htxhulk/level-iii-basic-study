@@ -1,4 +1,4 @@
-const CACHE='l3-basic-v2a'; // 'level3-basic-v1';
+const CACHE='level3-basic-v2b';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)));
